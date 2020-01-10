@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title= title
+        style.
+            * {
+                font-family: sans-serif
+            }
+
+            h1 {
+                color: red
+            }
+
+    body
+        h1= title
+        table
+            tr
+                th 商品名
+                th 金額
+            each item in list
+                tr
+                    td= item.name
+                    td= item.amount
